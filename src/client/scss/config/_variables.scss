@@ -1,2 +1,8 @@
-$green: #02cd3b;
-$bg: #0e1117;
+/* 
+  breakpoint
+  sm(mobile) : < 768
+  md(tablet): 768 < < 1024
+  lg(pc): >= 1024
+*/
+$md-breakpoint: 768px;
+$lg-breakpoint: 1024px;

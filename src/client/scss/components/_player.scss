@@ -1,0 +1,43 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  &-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &-album {
+    display: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  &-info {
+    margin-bottom: 10px;
+  }
+
+  &-state {
+    margin-bottom: 20px;
+  }
+
+  &-button-group {
+    display: flex;
+
+    button {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

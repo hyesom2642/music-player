@@ -4,17 +4,97 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>예시페이지</title>
-  <link rel="stylesheet" href="./assets/css/예시.css" />
+  <title>MUSIC PLAYER</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body>
-  <h1>TOP 10</h1>
-  <div class="container">
-    <!-- <ul class="ex"></ul>
-    <img class="exImg" src="" alt="">
-    <span class="tag"></span> -->
+  <div id="music-player">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 lg-only">
+          <section class="global-nav">
+            <div class="global-nav-profile">
+              <img src="https://pbs.twimg.com/media/E9s0Z08UYAIxtI7?format=jpg&name=large" alt="프로필 예시사진" />
+              <strong>OOO 님</strong>
+            </div>
+
+            <nav class="global-nav-menu">
+              <ul class="global-nav-menu-list">
+                <li class="global-nav-menu-item">SEARCH</li>
+                <li class="global-nav-menu-item">CHART</li>
+                <li class="global-nav-menu-item">GENRE</li>
+              </ul>
+            </nav>
+
+            <nav class="global-nav-libraryMenu">
+              <ul class="global-nav-menu-list">
+                <li class="global-nav-menu-item">FAVORITES</li>
+                <li class="global-nav-menu-item">PLAYLIST</li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+        <div class="col-lg-4 lg-only">
+          <section class="music-info">
+            <h1 class="music-info-title">DisCover New Music</h1>
+            <div class="music-info-top10">
+              <h3 class="music-info-top10-title">TOP 10 CHART</h3>
+              <ul class="music-info-top10-list">
+                <!-- <li class="music-info-top10-item">
+                  <span class="rank">0</span>
+                  <img class="album" src="https://image.bugsm.co.kr/album/images/500/40773/4077389.jpg" alt="" />
+                  <div class="etc">
+                    <strong class="song">그라데이션</strong>
+                    <span class="singer">10cm</span>
+                  </div>
+                  <div class="button-group">
+                    <button class="play" type="button">재생</button>
+                    <button class="" type="button">담기</button>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="col-sm-4 col-lg-4">
+          <section class="player">
+            <h1 class="player-title">NOW PLAYING !</h1>
+            <div class="player-album" id="player"></div>
+            <!-- <img class="player-album" src="./assets/images/앨범예시.jpg" alt="" /> -->
+            <div class="player-info">
+              <button type="button">+</button>
+              <strong class="title">노래제목</strong>
+              <span class="singer">가수이름</span>
+              <button type="button">❤</button>
+            </div>
+            <div class="player-state">
+              <div class="player-time">
+                <span>0:00</span>
+                <span>0:00</span>
+              </div>
+              <div class="player-bar">
+              </div>
+            </div>
+            <div class="player-button-group">
+              <button type="button">섞기</button>
+              <button type="button">이전</button>
+              <button class="player-button-play" type="button">재생</button>
+              <button class="player-button-pause" type="button">일시정지</button>
+              <button type="button">다음</button>
+              <button type="button">섞기</button>
+            </div>
+          </section>
+        </div>
+        <div class="col-lg-2 lg-only">
+          <section class="track-list">
+            <h1>Track List</h1>
+          </section>
+        </div>
+    </div>
   </div>
 
-  <script type="module" src="./assets/js/popularMusic.js"></script>
+  <script src="./src/client/js/popular_chart.js"></script>
+  <!-- <script src="./src/client/js/song_play.js"></script> -->
 </body>
 </html>
